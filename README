@@ -1,0 +1,18 @@
+This folder contains my personal dotfiles that configure the terminal to the
+way that I like it.
+
+Clone this repository into your home folder if you would like to use my
+dotfiles.
+
+In order to install my configurations, all you have to run is the following
+command:
+
+./install.sh
+
+This script should replace the current dotfiles on the system with mine. It will
+also save the old dotfiles into a folder called 'dotfilesOld'. All of my
+dotfiles are symbolically linked to the proper hidden files in the home folder.
+
+In order to pick and choose which dotfiles are linked, all you have to do is
+modify the install.sh script. There is a variable called 'files' which you
+can modify which controls what files are symbolically linked.
