@@ -5,7 +5,7 @@ Clone this repository into your home folder if you would like to use my
 dotfiles.
 
 In order to install my configurations, all you have to run is the following
-command:
+command from the dotfiles directory you cloned:
 
 ./install.sh
 
