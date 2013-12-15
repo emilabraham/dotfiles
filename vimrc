@@ -14,3 +14,6 @@ filetype plugin indent on
 "His make vim break text to avoid lines longer than 78 characters, but only
 "for files detected to be plain text.
 autocmd  FileType text setlocal textwidth=78
+
+"Turns on line numbers on the left side.
+set number

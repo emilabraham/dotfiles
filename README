@@ -17,7 +17,7 @@ dotfiles.
 In order to install my configurations, all you have to run is the following
 command from the dotfiles directory you cloned:
 
-./install.sh
+sh install.sh
 
 
 Customization
