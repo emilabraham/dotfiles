@@ -17,3 +17,12 @@ autocmd  FileType text setlocal textwidth=78
 
 "Turns on line numbers on the left side.
 set number
+
+"Insert space characters whenever tab key is pressed.
+set expandtab
+
+"Insert 2 spaces for a tab.
+set tabstop=2
+
+"Insert 2 spaces for indentation.
+set shiftwidth=2
