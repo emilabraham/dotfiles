@@ -26,3 +26,6 @@ set tabstop=2
 
 "Insert 2 spaces for indentation.
 set shiftwidth=2
+
+"textwidth is set to 80
+set textwidth=80

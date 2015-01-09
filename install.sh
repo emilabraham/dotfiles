@@ -27,5 +27,5 @@ for file in $files; do
     echo "Moving existing .$file from ~ to $olddir"
     mv ~/.$file ~/dotfilesOld/
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -s ~/.$file $dir/$file
 done
