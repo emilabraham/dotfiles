@@ -29,3 +29,6 @@ set shiftwidth=2
 
 "textwidth is set to 80
 set textwidth=80
+
+"Show the column number in status bar
+set ruler
