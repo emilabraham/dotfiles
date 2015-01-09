@@ -7,6 +7,9 @@ set autoindent
 "Display an incomplete command in the lower right corner of the window.
 set showcmd
 
+"Turn on syntax highlighting
+syntax on
+
 "Based of the filetype you are editing, vim tries to use proper indenting and
 "syntax highlighting.
 filetype plugin indent on
