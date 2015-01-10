@@ -11,10 +11,9 @@ dotfiles are symbolically linked to the proper hidden files in the home folder.
 
 Installation
 ------------
-*NOTE* Only tested and works on Ubuntu. I tried to run it on a Debian Linode,
-but Debian looks at '/etc/vim/vimrc' rather than '~/.vimrc'. There is 
-probably a workaround that I have not tried yet. Feel free to mess
-around. *NOTE*
+*NOTE* Only tested and proven to work on Ubuntu with bash. For example, I tried
+to run it on a Debian Linode, but Debian looks at '/etc/vim/vimrc' rather than
+'~/.vimrc'.  Feel free to mess around. *NOTE*
 
 Clone this repository into your home folder if you would like to use my
 dotfiles.
