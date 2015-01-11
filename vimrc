@@ -14,10 +14,6 @@ syntax on
 "syntax highlighting.
 filetype plugin indent on
 
-"His make vim break text to avoid lines longer than 78 characters, but only
-"for files detected to be plain text.
-autocmd  FileType text setlocal textwidth=78
-
 "Turns on line numbers on the left side.
 set number
 
@@ -35,3 +31,7 @@ set textwidth=80
 
 "Show the column number in status bar
 set ruler
+
+"Remap copy paste command to xclip over the ssh connection
+vmap "+y :!xclip -f -sel clip
+map "+p :r!xclip -o -sel clip
