@@ -1,3 +1,8 @@
+# Emil Abraham's bash_profile
+
+################################################################################
+#general configurations
+################################################################################
 #Colorization of ls
 alias ls="ls -G"
 
@@ -12,3 +17,10 @@ alias startnode="cd ~/dev/applause-fe-api; node app.js"
 
 #Alias to start runscope
 alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
+
+################################################################################
+#Other Configurations
+################################################################################
+
+#Command to use configurations in bashrc
+source ~/.bashrc

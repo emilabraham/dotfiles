@@ -2,7 +2,7 @@
 # Emil Abraham's bashrc
 
 ###############################################################################
-#global configurations
+#general configurations
 ###############################################################################
 
 #Turns on color syntax for ls.
