@@ -17,3 +17,6 @@ alias startnode="cd ~/dev/applause-fe-api; node app.js"
 
 #Alias to start runscope
 alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
+
+#Pull configurations from bashrc
+source ~/.bashrc

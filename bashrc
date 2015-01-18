@@ -5,6 +5,8 @@
 #general configurations
 ###############################################################################
 
+HOSTNAME=$(hostname)
+
 #Turns on color syntax for ls.
 alias ls="ls --color"
 
