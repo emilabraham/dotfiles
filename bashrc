@@ -9,7 +9,7 @@
 OS="Unknown"
 
 #ssh onto my server
-alias pestilence="ssh -X honestemu@66.228.40.92"
+alias pestilence="ssh honestemu@66.228.40.92"
 
 #Determine the OS
 case $OSTYPE in
