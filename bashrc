@@ -8,6 +8,9 @@
 #Initial variables
 OS="Unknown"
 
+#ssh onto my server
+alias pestilence="ssh -X honestemu@66.228.40.92"
+
 #Determine the OS
 case $OSTYPE in
   "linux-gnu")
@@ -16,7 +19,7 @@ case $OSTYPE in
     OS="OSX";;
   *)
     OS=$OSTYPE
-    echo "OS is $OS. Edit ~/.bashrc and create a configuration case."
+    echo "$OS is not supported. Edit ~/.bashrc and add a configuration case."
 esac
 
 ################################################################################
@@ -26,25 +29,24 @@ if [ $OS = "Linux" ]; then
   #Turns on color syntax for ls
   alias ls="ls --color"
 
-  #ssh onto my server
-  alias pestilence="ssh -X honestemu@66.228.40.92"
-
   ##############################################################################
   #pestilence configurations
   ##############################################################################
 
-  #Directory for my personal website directory
-  ppdir="~/public/emilabraham.com/personalpage"
+  if [ $HOSTNAME = "pestilence" ]; then
+    #Directory for my personal website directory
+    ppdir="~/public/emilabraham.com/personalpage"
 
-  #Alias to quickly change to my personal website directory
-  alias personalpage="cd $ppdir"
+    #Alias to quickly change to my personal website directory
+    alias personalpage="cd $ppdir"
 
-  #Alias to quickly change to americankna directory
-  alias americankna="cd ~/public/emilabraham.com/americankna"
+    #Alias to quickly change to americankna directory
+    alias americankna="cd ~/public/emilabraham.com/americankna"
 
-  #Alias to quickly deploy my personal website
-  alias deploy_personalpage="python $ppdir/manage.py validate;
-  sudo service apache2 restart"
+    #Alias to quickly deploy my personal website
+    alias deploy_personalpage="python $ppdir/manage.py validate;
+    sudo service apache2 restart"
+  fi
 
 elif [ $OS = "OSX" ]; then
   #Colorization of ls
@@ -53,12 +55,14 @@ elif [ $OS = "OSX" ]; then
   ##############################################################################
   #Hades Configurations
   ##############################################################################
-  #Alias to start tomcat
-  alias tomcat="sudo ~/dev/app/tomcat7/bin/catalina.sh jpda run"
+  if [ $HOSTNAME = "Hades.local" ]; then
+    #Alias to start tomcat
+    alias tomcat="sudo ~/dev/app/tomcat7/bin/catalina.sh jpda run"
 
-  #Alias to start nodejs middle tier
-  alias startnode="cd ~/dev/applause-fe-api; node app.js"
+    #Alias to start nodejs middle tier
+    alias startnode="cd ~/dev/applause-fe-api; node app.js"
 
-  #Alias to start runscope
-  alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
+    #Alias to start runscope
+    alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
+  fi
 fi
