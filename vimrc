@@ -31,7 +31,3 @@ set textwidth=80
 
 "Show the column number in status bar
 set ruler
-
-"Remap copy paste command to xclip over the ssh connection
-vmap "+y :!xclip -f -sel clip
-map "+p :r!xclip -o -sel clip
