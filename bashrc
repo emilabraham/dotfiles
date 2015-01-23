@@ -45,7 +45,7 @@ if [ $OS = "Linux" ]; then
 
     #Alias to quickly deploy my personal website
     alias deploy_personalpage="python $ppdir/manage.py validate;
-    sudo service apache2 restart"
+    python $ppdir/manage.py test; sudo service apache2 restart"
   fi
 
 elif [ $OS = "OSX" ]; then
