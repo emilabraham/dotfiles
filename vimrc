@@ -31,3 +31,6 @@ set textwidth=80
 
 "Show the column number in status bar
 set ruler
+
+"Use javascript highlighting for json
+autocmd BufNewFile,BufRead *.json set ft=javascript
