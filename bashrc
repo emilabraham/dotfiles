@@ -11,6 +11,9 @@ OS="Unknown"
 #ssh onto my server
 alias pestilence="ssh honestemu@66.228.40.92"
 
+#ssh onto my seedbox
+alias seedbox="ssh honestemu@grace.baconseed.org"
+
 #Determine the OS
 case $OSTYPE in
   "linux-gnu")
@@ -66,3 +69,6 @@ elif [ $OS = "OSX" ]; then
     alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
   fi
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
