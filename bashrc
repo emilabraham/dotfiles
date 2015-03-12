@@ -25,6 +25,16 @@ case $OSTYPE in
     echo "$OS is not supported. Edit ~/.bashrc and add a configuration case."
 esac
 
+#Color support
+# Turn on 256 color support...
+if [ "x$TERM" = "xxterm" ]
+then
+    export TERM="xterm-256color"
+fi
+
+#Tell tmux to assume 256 color
+alias tmux="TERM=screen-256color-bce tmux"
+
 ################################################################################
 #OS based configurations
 ################################################################################
@@ -73,9 +83,4 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#Color support
-# Turn on 256 color support...
-if [ "x$TERM" = "xxterm" ]
-then
-    export TERM="xterm-256color"
-fi
+
