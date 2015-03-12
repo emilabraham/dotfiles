@@ -40,3 +40,6 @@ execute pathogen#infect()
 
 "set colorscheme
 colorscheme hybrid
+
+"set a visual line at 80 characters
+set colorcolumn=80
