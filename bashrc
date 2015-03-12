@@ -72,3 +72,10 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+#Color support
+# Turn on 256 color support...
+if [ "x$TERM" = "xxterm" ]
+then
+    export TERM="xterm-256color"
+fi

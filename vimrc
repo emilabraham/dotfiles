@@ -37,3 +37,6 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 
 "executes pathogen, a plugin consolidator
 execute pathogen#infect()
+
+"set colorscheme
+colorscheme hybrid
