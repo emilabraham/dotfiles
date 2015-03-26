@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/eabraham/dev/status.applause.io'
 let g:netrw_dirhist_2='/Users/eabraham/dev'
 let g:netrw_dirhist_3='/Users/eabraham'
 let g:netrw_dirhist_4='/Users'
+let g:netrw_dirhist_5='/Users/eabraham/dev/status.applause.io/endpoints/private'
+let g:netrw_dirhist_6='/Users/eabraham/Documents/Timesheets'
+let g:netrw_dirhist_7='/Users/eabraham/dev/stratoscope/node_modules/nconf/node_modules'
+let g:netrw_dirhist_8='/Users/eabraham/dev/stratoscope/utils'
