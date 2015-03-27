@@ -29,7 +29,7 @@ esac
 # Turn on 256 color support...
 if [ "x$TERM" = "xxterm" ]
 then
-    export TERM="xterm-256color"
+  export TERM="xterm-256color"
 fi
 
 #Tell tmux to assume 256 color
@@ -66,9 +66,9 @@ elif [ $OS = "OSX" ]; then
   alias ls="ls -G"
 
   ##############################################################################
-  #Hades Configurations
+  #hawkins Configurations
   ##############################################################################
-  if [ $HOSTNAME = "Hades.local" ]; then
+  if [ $HOSTNAME = "hawkins.corp.applause.com" ]; then
     #Alias to start tomcat
     alias tomcat="sudo ~/dev/app/tomcat7/bin/catalina.sh jpda run"
 
@@ -77,6 +77,12 @@ elif [ $OS = "OSX" ]; then
 
     #Alias to start runscope
     alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
+
+    #Alias to start boot2docker with proper environment variables
+    alias startboot2dock="boot2docker start;
+    export DOCKER_HOST=tcp://192.168.59.103:2376
+    export DOCKER_CERT_PATH=/Users/eabraham/.boot2docker/certs/boot2docker-vm
+    export DOCKER_TLS_VERIFY=1"
   fi
 fi
 
