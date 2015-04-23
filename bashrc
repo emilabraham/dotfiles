@@ -64,11 +64,14 @@ if [ $OS = "Linux" ]; then
 elif [ $OS = "OSX" ]; then
   #Colorization of ls
   alias ls="ls -G"
+  ENV1="hawkins.corp.applause.com"
+  ENV2="Hades.local"
 
   ##############################################################################
-  #hawkins Configurations
+  #hawkins/Hades Configurations
   ##############################################################################
-  if [ $HOSTNAME = "hawkins.corp.applause.com" ]; then
+
+  if [ $HOSTNAME = $ENV1 ] || [ $HOSTNAME = $ENV2 ]; then
     #Alias to start tomcat
     alias tomcat="sudo ~/dev/app/tomcat7/bin/catalina.sh jpda run"
 
