@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/eabraham/Documents/killionaire/views'
 let g:netrw_dirhist_2='/Users/eabraham/Documents/killionaire/router'
+let g:netrw_dirhist_3='/Users/eabraham/dev/stratoscope/node_modules/applause-logger'
+let g:netrw_dirhist_4='/Users/eabraham/dev/internal-app/public/src'
+let g:netrw_dirhist_5='/Users/eabraham/dev/internal-app/public'
+let g:netrw_dirhist_6='/Users/eabraham/dev/internal-app/public/src/constants'
