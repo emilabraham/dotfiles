@@ -43,3 +43,6 @@ colorscheme hybrid
 
 "set a visual line at 80 characters
 set colorcolumn=80
+
+"set system's paste command to keep formatting
+set paste
