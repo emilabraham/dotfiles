@@ -11,6 +11,9 @@ OS="Unknown"
 #ssh onto my server
 alias pestilence="ssh honestemu@66.228.40.92"
 
+#ssh onto americankna server
+alias famine="ssh root@45.55.42.150"
+
 #ssh onto my seedbox
 alias seedbox="ssh honestemu@grace.baconseed.org"
 
