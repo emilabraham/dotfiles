@@ -19,7 +19,13 @@ command from the dotfiles directory you cloned:
 
 
 ##Customization
-
 In order to pick and choose which dotfiles are linked, all you have to do is
 modify the install.sh script. There is a variable called `files` which you
 can modify to control what files are symbolically linked.
+
+###vim
+You can add vim plugins to the folder `vim/bundles`. This will by handled by the
+vim plugin, [pathogen](https://github.com/tpope/vim-pathogen). In order to sync
+them up with the git repository, just add them as a submodule:
+
+`git submodule add <git_clone_repository> <vim/bundle/<repository_name>/`
