@@ -128,4 +128,6 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-
+#rbenv path
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
