@@ -2,17 +2,17 @@
 
 "This makes vim use the indentation of the previous line for a newly created
 "line.
-set autoindent
+"set autoindent
 
 "Display an incomplete command in the lower right corner of the window.
 set showcmd
 
-"Turn on syntax highlighting
-syntax on
-
-"Based of the filetype you are editing, vim tries to use proper indenting and
+"Based off the filetype you are editing, vim tries to use proper indenting and
 "syntax highlighting.
 filetype plugin indent on
+
+"Turn on syntax highlighting
+syntax on
 
 "Turns on line numbers on the left side.
 set number
@@ -43,6 +43,3 @@ colorscheme hybrid
 
 "set a visual line at 80 characters
 set colorcolumn=80
-
-"set system's paste command to keep formatting
-set paste
