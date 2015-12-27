@@ -43,3 +43,6 @@ colorscheme hybrid
 
 "set a visual line at 80 characters
 set colorcolumn=80
+
+"Automatic word wrapping
+:set formatoptions+=t
