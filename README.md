@@ -7,6 +7,11 @@ This script should replace the current dotfiles on the system with mine. It will
 also save the old dotfiles into a folder called `dotfilesOld`. All of my
 dotfiles are symbolically linked to the proper hidden files in the home folder.
 
+The purpose of this is twofold:
+1. Have a backup of my configurations stored on the cloud, in case I lose my
+   local copy.
+2. Have my configurations be portable across any terminals I use on several
+   different computers and environments.
 
 ##Installation
 Clone this repository into your home folder if you would like to use my
