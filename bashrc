@@ -17,6 +17,9 @@ alias famine="ssh root@45.55.42.150"
 #ssh onto my seedbox
 alias seedbox="ssh honestemu@grace.baconseed.org"
 
+#Run android studio
+alias android="~/Applications/android-studio/bin/studio.sh &"
+
 #Determine the OS
 case $OSTYPE in
   "linux-gnu")
