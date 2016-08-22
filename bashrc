@@ -103,34 +103,11 @@ if [ $OS = "Linux" ]; then
 elif [ $OS = "OSX" ]; then
   #Colorization of ls
   alias ls="ls -G"
-  ENV1="hawkins.corp.applause.com"
-  ENV2="Hades.local"
-
-  ##############################################################################
-  #hawkins/Hades Configurations
-  ##############################################################################
-
-  if [ $HOSTNAME = $ENV1 ] || [ $HOSTNAME = $ENV2 ]; then
-    #Alias to start tomcat
-    alias tomcat="sudo ~/dev/app/tomcat7/bin/catalina.sh jpda run"
-
-    #Alias to start nodejs middle tier
-    alias startnode="cd ~/dev/applause-fe-api; node app.js"
-
-    #Alias to start runscope
-    alias runscopeagent="cd ~/Downloads; ./runscope-radar -f radar.conf"
-
-    #Alias to start boot2docker with proper environment variables
-    alias startboot2dock="boot2docker start;
-    export DOCKER_HOST=tcp://192.168.59.103:2376
-    export DOCKER_CERT_PATH=/Users/eabraham/.boot2docker/certs/boot2docker-vm
-    export DOCKER_TLS_VERIFY=1"
-  fi
-fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#rbenv path
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export NVM_DIR="/Users/eabraham/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source /opt/boxen/env.sh
