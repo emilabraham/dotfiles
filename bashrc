@@ -103,6 +103,7 @@ if [ $OS = "Linux" ]; then
 elif [ $OS = "OSX" ]; then
   #Colorization of ls
   alias ls="ls -G"
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
