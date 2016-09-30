@@ -112,3 +112,5 @@ export NVM_DIR="/Users/eabraham/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 source /opt/boxen/env.sh
+
+source ~/.git-completion.bash
