@@ -1,4 +1,4 @@
-#dotfiles
+# dotfiles
 
 This folder contains my personal dotfiles that configure the terminal to the
 way that I like it.
@@ -13,7 +13,7 @@ The purpose of this is twofold:
 2. Have my configurations be portable across any terminals I use on several
    different computers and environments.
 
-##Installation
+## Installation
 Clone this repository into your home folder if you would like to use my
 dotfiles.
 
@@ -23,12 +23,12 @@ command from the dotfiles directory you cloned:
 `sh install.sh`
 
 
-##Customization
+## Customization
 In order to pick and choose which dotfiles are linked, all you have to do is
 modify the install.sh script. There is a variable called `files` which you
 can modify to control what files are symbolically linked.
 
-###vim
+### vim
 You can add vim plugins to the folder `vim/bundles`. This will by handled by the
 vim plugin, [pathogen](https://github.com/tpope/vim-pathogen). In order to sync
 them up with the git repository, just add them as a submodule:
