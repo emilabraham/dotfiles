@@ -46,3 +46,6 @@ set colorcolumn=80
 
 "Automatic word wrapping
 :set formatoptions+=t
+
+"Syntax highlighting for bash files
+autocmd BufRead,BufNewFile bashrc*,bash_profile set filetype=sh
