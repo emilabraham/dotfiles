@@ -28,9 +28,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/vim-latex-live-preview"]
-	path = vim/bundle/vim-latex-live-preview
-	url = https://github.com/xuhdev/vim-latex-live-preview
 [submodule "vim/bundle/vim-pug"]
 	path = vim/bundle/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
