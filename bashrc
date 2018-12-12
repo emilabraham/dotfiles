@@ -103,6 +103,7 @@ if [ $OS = "Linux" ]; then
 elif [ $OS = "OSX" ]; then
   #Colorization of ls
   alias ls="ls -G"
+  export SOURCE_DIRECTORY=$HOME/src
 fi
 
 ### Added by the Heroku Toolbelt
@@ -112,3 +113,9 @@ export NVM_DIR="/Users/eabraham/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 source ~/.git-completion.bash
+
+# Load "Platform" configuration
+platformrc_file=$HOME/.platformrc;
+if [ -e $platformrc_file ]; then
+  source $platformrc_file;
+fi
