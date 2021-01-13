@@ -16,6 +16,8 @@ alias famine="ssh root@45.55.42.150"
 #ssh onto my seedbox
 alias seedbox="ssh honestemu@hypnos.feralhosting.com"
 
+export EDITOR="vim"
+
 #Determine the OS
 case $OSTYPE in
   "linux-gnu")

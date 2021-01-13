@@ -42,7 +42,7 @@ execute pathogen#infect()
 "colorscheme hybrid
 
 "set a visual line at 80 characters
-set colorcolumn=80
+"set colorcolumn=80
 
 "Automatic word wrapping
 :set formatoptions+=t
