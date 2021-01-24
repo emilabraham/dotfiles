@@ -14,7 +14,7 @@ alias pestilence="ssh honestemu@66.228.40.92"
 alias famine="ssh root@45.55.42.150"
 
 #ssh onto my seedbox
-alias seedbox="ssh honestemu@hypnos.feralhosting.com"
+alias seedbox="ssh honestemu@chaos.feralhosting.com"
 
 export EDITOR="vim"
 
